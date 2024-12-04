@@ -15,13 +15,10 @@ def count_letters(book):
 
     return sorted(letter_count.items(), key=lambda item: item[1], reverse=True)
 
-
-    return letters
-
 def main():
     path = "books/frankenstein.txt"
     title = "Frankenstein"
-    
+
     book = read_book(path)
 
     print(f"--- Begin report of the book '{title}' in {path} ---")
